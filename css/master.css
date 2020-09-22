@@ -1,7 +1,10 @@
-<<<<<<< Updated upstream
-=======
+
+
 .slider {
 	width: 70%;
+.slider {
+	width: 95%;
+
 	margin: auto;
 	overflow: hidden;
 }
@@ -16,13 +19,13 @@
 
 .slider li {
 	width: 100%;
-	
+
 	list-style: none;
 }
 
 .slider img {
 	width: 100%;
-	
+
 }
 
 @keyframes cambio {
@@ -39,4 +42,4 @@
 	100% {margin-left: -300%;}
 }
 
->>>>>>> Stashed changes
+
