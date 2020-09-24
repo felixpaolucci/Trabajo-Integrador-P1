@@ -1,0 +1,108 @@
+<<<<<<< Updated upstream
+=======
+/*----- CSS - GLOBALES -----*/
+*{
+    box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+
+/*----- CSS - HEADER -----*/
+.header{
+	background-color: #5131E8;
+	justify-content: space-between;
+}
+
+.menu .opciones{
+	width: 100%;
+	text-align: center;
+}
+
+.opciones li a{
+    color: black;
+	text-decoration: none;
+}
+
+.opciones li a:hover{
+	text-decoration: underline;
+}
+
+.buscador{
+	text-align: center;
+	display: none;
+}
+
+/*----- CSS - FOOTER -----*/
+.footer{
+	display: flex;
+	background-color: #5131E8;
+}
+.redes{
+	text-decoration: none;
+}
+/*----- CSS - SLIDER -----*/
+.slider {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	display: none;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;	
+	animation: cambio 15s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*----- CSS - GRANDE -----*/
+@media(min-width: 1024px){
+	.header{
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+	}
+	.menu .opciones{
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.slider{
+		display: grid;
+		width: 50%;
+	}
+}
+
+
+>>>>>>> Stashed changes
