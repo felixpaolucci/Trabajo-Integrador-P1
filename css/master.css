@@ -4,8 +4,10 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: #5131E8;
+	/*background-color: #1c0c6e; VER QUE PASA CON EL HEADER Y EL COLOR DE FONDO*/
 }
-img{
+img{ /*COMO PONER IMAGENES DEL MISMO TAMANIO TODO*/
 	width: 100%;
 	border-radius: 10px;
 }
@@ -15,27 +17,33 @@ li{
 
 /*----- CSS - HEADER -----*/
 .header{
-	background-color: #5131E8;
-	justify-content: space-between;
+	/*background-color: #5131E8;*/
+	background-color: black;
 }
-
+.logo{
+	width: 30%;
+	padding: 10px;
+}
 .menu .opciones{
 	width: 100%;
 	text-align: center;
+	/*meter opciones en header*/
 }
-
 .opciones li a{
-  color: black;
+  color: white;
 	text-decoration: none;
 }
-
 .opciones li a:hover{
 	text-decoration: underline;
 }
 
 .buscador{
+	color: white;
+	background-color: #5131E8;
 	text-align: center;
 	display: none;
+	border-radius: 20px;
+	/*cambiar letra y color borde*/
 }
 
 /*----- CSS - FOOTER -----*/
@@ -46,41 +54,8 @@ li{
 .redes{
 	text-decoration: none;
 }
+
 /*----- CSS - SLIDER -----*/
-
-.header{
-  display: flex;
-	background-color: #5131E8;
-	border-bottom: black solid 1px;
-}
-.logo{
-    width: 70%;
-}
-.menu{
-    display: flex;
-	justify-content: space-between; 
-    text-align: center;
-}
-.menu .opciones{
-    width: 50%;
-}
-.opciones{
-	display: flex;
-}
-.opciones li a{
-    display: flex;
-    color: black;
-    text-decoration: none;
-	padding-left: 40px;
-}
-.opciones li a:hover{
-	text-decoration: underline;
-}	
-.encabezado{ 
-    display: flex;
-    justify-content: space-between;
-}
-
 .slider {
 	width: 100%;
 	margin: 0;
@@ -92,7 +67,6 @@ li{
 	padding: 0;
 	width: 400%;	
 	animation: cambio 15s infinite alternate linear;
-	width: 400%;
 	display: none;
 }
 
@@ -117,27 +91,112 @@ li{
 	100% {margin-left: -300%;}
 }
 
+/*----- CSS - ESTRENOS -----*/
 .estrenos {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
 	width: 100%
 }
+
+/*----- CSS - TENDENCIAS -----*/
+.tendencias{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%
+}
+
+/*----- CSS - NO TE PODES PERDER -----*/
+.noperder{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%
+}
+
+/*----- CSS - SERIES -----*/
+.series {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%
+}
+
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
+	/*----- HEADER -----*/
+	.logo{
+		width: 10%;
+	}
 	.header{
-		display: grid;
+		display: flex;
 		width: 100%;
-		grid-template-columns: 1fr 1fr;
+		/*bajar las opciones*/
 	}
 	.menu .opciones{
 		display: grid;
 		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+	.buscador{
+		display: inline;
+	}
+
+	/*----- HOME -----*/
+	.estrenos{
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-	.slider{
+	.tendencias{
 		display: grid;
-		width: 100%;	    
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.noperder{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.series{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	/*----- SLIDER -----*/
+	.slider {
+		width: 55%;
+		margin: 0;
+		overflow: hidden;
+		margin-left: 20%;
+		margin-top: 2%;
+	}
+	.slider ul {
+		display: flex;
+		padding: 0;
+		width: 400%;	
+		animation: cambio 15s infinite alternate linear;
+	}
+	.slider li {
+		width: 100%;
+		list-style: none;
+	}
+	.slider img {
+		width: 100%;
+	}
+	@keyframes cambio {
+		0% {margin-left: 0;}
+		20% {margin-left: 0;}
+		
+		25% {margin-left: -100%;}
+		45% {margin-left: -100%;}
+		
+		50% {margin-left: -200%;}
+		70% {margin-left: -200%;}
+		
+		75% {margin-left: -300%;}
+		100% {margin-left: -300%;}
 	}
 }
