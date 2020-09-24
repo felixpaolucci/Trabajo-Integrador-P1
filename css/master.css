@@ -2,6 +2,11 @@
 *{
     box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+*{
+    box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+
 	margin: 0;
 	padding: 0;
 }
@@ -46,18 +51,54 @@ li{
 	text-decoration: none;
 }
 /*----- CSS - SLIDER -----*/
+
+.header{
+    display: flex;
+	background-color: #5131E8;
+	border-bottom: black solid 1px;
+}
+.logo{
+    width: 70%;
+}
+.menu{
+    display: flex;
+	justify-content: space-between; 
+    text-align: center;
+}
+.menu .opciones{
+    width: 50%;
+}
+.opciones{
+	display: flex;
+}
+.opciones li a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+	padding-left: 40px;
+}
+.opciones li a:hover{
+	text-decoration: underline;
+}	
+.encabezado{ 
+    display: flex;
+    justify-content: space-between;
+}
+
 .slider {
 	width: 100%;
 	margin: 0;
 	overflow: hidden;
 	display: none;
-}
+
 
 .slider ul {
 	display: flex;
 	padding: 0;
 	width: 400%;	
 	animation: cambio 15s infinite alternate linear;
+	width: 400%;
+	animation: cambio 20s infinite alternate linear;
 }
 
 .slider li {
@@ -101,3 +142,4 @@ li{
 		width: 50%;
 	}
 }
+
