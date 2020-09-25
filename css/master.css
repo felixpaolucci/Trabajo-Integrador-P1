@@ -4,30 +4,37 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #5131E8;
-	/*background-color: #1c0c6e; VER QUE PASA CON EL HEADER Y EL COLOR DE FONDO*/
+	color: white;
 }
-img{ /*COMO PONER IMAGENES DEL MISMO TAMANIO TODO*/
+body{
+	background-color: #5131E8;
+}
+img{
 	width: 100%;
-	border-radius: 10px;
 }
 li{
     list-style-type: none;
+}
+.peliculas img{
+	max-height: 350px;
 }
 
 /*----- CSS - HEADER -----*/
 .header{
 	/*background-color: #5131E8;*/
 	background-color: black;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 .logo{
-	width: 30%;
+	width: 10%;
 	padding: 10px;
 }
 .menu .opciones{
 	width: 100%;
 	text-align: center;
-	/*meter opciones en header*/
 }
 .opciones li a{
   color: white;
@@ -43,16 +50,18 @@ li{
 	text-align: center;
 	display: none;
 	border-radius: 20px;
-	/*cambiar letra y color borde*/
 }
 
 /*----- CSS - FOOTER -----*/
 .footer{
 	display: flex;
-	background-color: #5131E8;
+	background-color: black;
+	color: 	white;
+	justify-content: space-around;
 }
-.redes{
+.redes h2 a{
 	text-decoration: none;
+	color: white;
 }
 
 /*----- CSS - SLIDER -----*/
@@ -97,7 +106,10 @@ li{
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
-	width: 100%
+	width: 100%;
+}
+.estrenos div img{
+	border-radius: 10px;
 }
 
 /*----- CSS - TENDENCIAS -----*/
@@ -106,7 +118,10 @@ li{
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
-	width: 100%
+	width: 100%;
+}
+.tendencias div img{
+	border-radius: 10px;
 }
 
 /*----- CSS - NO TE PODES PERDER -----*/
@@ -115,7 +130,10 @@ li{
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
-	width: 100%
+	width: 100%;
+}
+.noperder div img{
+	border-radius: 10px;
 }
 
 /*----- CSS - SERIES -----*/
@@ -124,20 +142,16 @@ li{
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
-	width: 100%
+	width: 100%;
+}
+.series div img{
+	border-radius: 10px;
 }
 
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
 	/*----- HEADER -----*/
-	.logo{
-		width: 10%;
-	}
-	.header{
-		display: flex;
-		width: 100%;
-		/*bajar las opciones*/
-	}
+
 	.menu .opciones{
 		display: grid;
 		width: 100%;
@@ -151,27 +165,30 @@ li{
 	.estrenos{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 10px;
 	}
 	.tendencias{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 10px;
 	}
 	.noperder{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 10px;
 	}
 	.series{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 10px;
 	}
 
 	/*----- SLIDER -----*/
 	.slider {
-		width: 55%;
+		width: 100%;
 		margin: 0;
 		overflow: hidden;
-		margin-left: 20%;
-		margin-top: 2%;
+		height: 600px;
 	}
 	.slider ul {
 		display: flex;
