@@ -18,10 +18,12 @@ li{
 .peliculas img{
 	max-height: 350px;
 }
+h2{
+	padding-left: 15px;
+}
 
 /*----- CSS - HEADER -----*/
 .header{
-	/*background-color: #5131E8;*/
 	background-color: black;
 	width: 100%;
 	display: flex;
@@ -29,7 +31,7 @@ li{
 	justify-content: space-around;
 }
 .logo{
-	width: 10%;
+	width: 30%;
 	padding: 10px;
 }
 .menu .opciones{
@@ -151,7 +153,9 @@ li{
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
 	/*----- HEADER -----*/
-
+	.logo{
+		width: 10%;
+	}
 	.menu .opciones{
 		display: grid;
 		width: 100%;
@@ -188,13 +192,13 @@ li{
 		width: 100%;
 		margin: 0;
 		overflow: hidden;
-		height: 600px;
+		height: 550px;
 	}
 	.slider ul {
 		display: flex;
 		padding: 0;
 		width: 400%;	
-		animation: cambio 15s infinite alternate linear;
+		animation: cambio 10s infinite alternate linear;
 	}
 	.slider li {
 		width: 100%;
@@ -202,6 +206,7 @@ li{
 	}
 	.slider img {
 		width: 100%;
+		max-height: 500px;
 	}
 	@keyframes cambio {
 		0% {margin-left: 0;}
