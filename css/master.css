@@ -6,6 +6,12 @@
 	padding: 0;
 	color: white;
 }
+div img{
+	opacity: 1;
+}
+div img:hover{
+	opacity: 0.5;
+}
 body{
 	background-color: #5131E8;
 }
@@ -16,7 +22,7 @@ li{
     list-style-type: none;
 }
 .peliculas img{
-	max-height: 350px;
+	max-height: 250px;
 }
 h2{
 	padding-left: 15px;
@@ -166,6 +172,9 @@ h2{
 	}
 
 	/*----- HOME -----*/
+	.peliculas img{
+		max-height: 350px;
+	}
 	.estrenos{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
