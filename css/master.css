@@ -6,10 +6,10 @@
 	padding: 0;
 	color: white;
 }
-div img{
+div a img{
 	opacity: 1;
 }
-div img:hover{
+div a img:hover{
 	opacity: 0.5;
 }
 body{
