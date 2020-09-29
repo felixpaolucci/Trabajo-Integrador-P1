@@ -155,6 +155,19 @@ h2{
 .series div img{
 	border-radius: 10px;
 }
+/*----- CSS - DETALLE -----*/
+.informacion{
+	display: flex;
+	padding: 10px;
+}
+.informacion div img{
+    width: 95%;
+	border-radius: 10px;
+	display: none;
+}
+.iframe{
+	text-align: center;
+}
 
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
@@ -195,7 +208,18 @@ h2{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: 10px;
 	}
-
+	.informacion{
+		display: flex;
+		padding: 10px;
+	}
+	.informacion div img{
+		
+		border-radius: 10px;
+		display: inline;
+	}
+	.iframe{
+		text-align: center;
+	}
 	/*----- SLIDER -----*/
 	.slider {
 		width: 100%;
@@ -230,4 +254,6 @@ h2{
 		75% {margin-left: -300%;}
 		100% {margin-left: -300%;}
 	}
+
+	
 }
