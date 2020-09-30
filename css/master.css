@@ -27,6 +27,9 @@ li{
 h2{
 	padding-left: 15px;
 }
+::placeholder{
+	color: white;
+}
 
 /*----- CSS - HEADER -----*/
 .header{
@@ -51,7 +54,6 @@ h2{
 .opciones li a:hover{
 	text-decoration: underline;
 }
-
 .buscador{
 	color: white;
 	background-color: #5131E8;
@@ -78,7 +80,6 @@ h2{
 	margin: 0;
 	overflow: hidden;
 }
-
 .slider ul {
 	display: flex;
 	padding: 0;
@@ -86,7 +87,6 @@ h2{
 	animation: cambio 15s infinite alternate linear;
 	display: none;
 }
-
 .slider li {
 	width: 100%;
 	list-style: none;
@@ -155,13 +155,14 @@ h2{
 .series div img{
 	border-radius: 10px;
 }
+
 /*----- CSS - DETALLE -----*/
 .informacion{
 	display: flex;
 	padding: 10px;
 }
 .informacion div img{
-    width: 95%;
+    width: 90%;
 	border-radius: 10px;
 	display: none;
 }
@@ -212,14 +213,14 @@ h2{
 		display: flex;
 		padding: 10px;
 	}
-	.informacion div img{
-		
+	.informacion div img{		
 		border-radius: 10px;
 		display: inline;
 	}
 	.iframe{
 		text-align: center;
 	}
+
 	/*----- SLIDER -----*/
 	.slider {
 		width: 100%;
@@ -254,6 +255,4 @@ h2{
 		75% {margin-left: -300%;}
 		100% {margin-left: -300%;}
 	}
-
-	
 }
