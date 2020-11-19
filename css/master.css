@@ -49,7 +49,7 @@ h2{
 	text-align: center;
 }
 .opciones li a{
-  color: white;
+	color: white;
 	text-decoration: none;
 }
 .opciones li a:hover{
@@ -77,19 +77,15 @@ h2{
 
 /*----- CSS - SLIDER -----*/
 .slider {
-	width: 100%;
-	margin: 0;
-	overflow: hidden;
-}
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;	
-	animation: cambio 15s infinite alternate linear;
 	display: none;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0;
+	animation: cambio 15s infinite;
 }
 .slider li {
-	width: 100%;
+	width: 400%;
 	list-style: none;
 }
 .slider img {
@@ -226,15 +222,11 @@ h2{
 	/*----- SLIDER -----*/
 	.slider {
 		width: 100%;
-		margin: 0;
+		display: block;
+		margin: auto;
 		overflow: hidden;
-		height: 520px;
-	}
-	.slider ul {
-		display: flex;
 		padding: 0;
-		width: 400%;	
-		animation: cambio 10s infinite alternate linear;
+		animation: cambio 20s infinite;
 	}
 	.slider li {
 		width: 100%;
@@ -242,7 +234,7 @@ h2{
 	}
 	.slider img {
 		width: 100%;
-		max-height: 500px;
+		max-height: 400px;
 	}
 	@keyframes cambio {
 		0% {margin-left: 0;}
