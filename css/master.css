@@ -36,7 +36,6 @@ h2{
 .header{
 	background-color: black;
 	width: 100%;
-	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -170,6 +169,9 @@ h2{
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
 	/*----- HEADER -----*/
+	.header{
+		display: flex;
+	}
 	.logo{
 		width: 10%;
 	}
