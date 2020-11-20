@@ -66,13 +66,12 @@ h2{
 .footer{
 	background-color: black;
 	color: 	white;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
 	align-items: center;
 }
 .logos{
-	width: 20%;
-	padding: 50px;
+	width: 40%;
+	padding: 20px;
 }
 .redes h2 a{
 	text-decoration: none;
@@ -116,6 +115,7 @@ h2{
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
+	padding: 30px;
 }
 .peliculasEstrenos a img{
 	border-radius: 10px;
@@ -129,6 +129,7 @@ h2{
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
+	padding: 30px;
 }
 .peliculasTendencias a img{
 	border-radius: 10px;
@@ -143,6 +144,7 @@ h2{
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
+	padding: 30px;
 }
 .peliculasNo a img{
 	border-radius: 10px;
@@ -150,17 +152,17 @@ h2{
 }
 
 /*----- CSS - SERIES -----*/
-.series {
+.peliculaSeries{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
+	padding: 30px;
 }
-.series a img{
+.peliculaSeries a img{
 	border-radius: 10px;
 	max-height: 350px;
-}
 }
 
 /*----- CSS - Movie/SerieDtail -----*/
@@ -216,12 +218,12 @@ h2{
 		padding: 20px;
 
 	}
-	.series{
+	.peliculaSeries{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: 20px;
 	}
-	/*----- Movie/Sreie-Detail -----*/
+	/*----- Movie/Serie-Detail -----*/
 	.informacion{
 		display: flex;
 		padding: 10px;
@@ -232,6 +234,16 @@ h2{
 	}
 	.iframe{
 		text-align: center;
+	}
+
+	/*----- FOOTER -----*/
+	.footer{
+		display: flex;
+		justify-content: space-around;
+	}
+	.logos{
+		width: 20%;
+		padding: 40px;
 	}
 
 	/*----- SLIDER -----*/
