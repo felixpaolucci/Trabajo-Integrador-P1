@@ -119,31 +119,34 @@ h2{
 }
 .peliculasEstrenos a img{
 	border-radius: 10px;
-	max-height: 300px;
+	max-height: 350px;
 }
 
 /*----- CSS - TENDENCIAS -----*/
-.tendencias{
+.peliculasTendencias{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
 }
-.tendencias div img{
+.peliculasTendencias a img{
 	border-radius: 10px;
+	max-height: 350px;
+
 }
 
 /*----- CSS - NO TE PODES PERDER -----*/
-.noperder{
+.peliculasNo{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
 }
-.noperder div img{
+.peliculasNo a img{
 	border-radius: 10px;
+	max-height: 350px;
 }
 
 /*----- CSS - SERIES -----*/
@@ -154,8 +157,10 @@ h2{
 	text-align: center;
 	width: 100%;
 }
-.series div img{
+.series a img{
 	border-radius: 10px;
+	max-height: 350px;
+}
 }
 
 /*----- CSS - Movie/SerieDtail -----*/
@@ -200,20 +205,21 @@ h2{
 		padding: 20px;
 
 	}
-	.tendencias{
+	.peliculasTendencias{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: 10px;
+		padding: 20px;
 	}
-	.noperder{
+	.peliculasNo{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: 10px;
+		padding: 20px;
+
 	}
 	.series{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: 10px;
+		padding: 20px;
 	}
 	/*----- Movie/Sreie-Detail -----*/
 	.informacion{
