@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
         return respuesta.json()
     })
     .then(function(sliderA){
-        for(let i = 8; i < 12; i ++){
+        for(let i = 4; i < 12; i ++){
             slider.innerHTML += `<li> <img src="https://image.tmdb.org/t/p/original${sliderA.results[i].backdrop_path}" alt="slider" </li>`
         }
     })
@@ -32,5 +32,7 @@ window.addEventListener('load', function(){
     .catch(function(error){
         console.log(error);
     })
+
+    
 
 })
