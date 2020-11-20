@@ -6,10 +6,10 @@
 	padding: 0;
 	color: white;
 }
-div a img{
+article a img{
 	opacity: 1;
 }
-div a img:hover{
+article a img:hover{
 	opacity: 0.5;
 }
 body{
@@ -64,10 +64,15 @@ h2{
 
 /*----- CSS - FOOTER -----*/
 .footer{
-	display: flex;
 	background-color: black;
 	color: 	white;
+	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+.logos{
+	width: 20%;
+	padding: 50px;
 }
 .redes h2 a{
 	text-decoration: none;
@@ -105,15 +110,16 @@ h2{
 }
 
 /*----- CSS - ESTRENOS -----*/
-.estrenos {
+.peliculasEstrenos {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 	text-align: center;
 	width: 100%;
 }
-.estrenos div img{
+.peliculasEstrenos a img{
 	border-radius: 10px;
+	max-height: 300px;
 }
 
 /*----- CSS - TENDENCIAS -----*/
@@ -188,10 +194,11 @@ h2{
 	.peliculas img{
 		max-height: 350px;
 	}
-	.estrenos{
+	.peliculasEstrenos{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: 10px;
+		padding: 20px;
+
 	}
 	.tendencias{
 		display: grid;
@@ -225,6 +232,7 @@ h2{
 	.slider {
 		width: 100%;
 		display: block;
+		display: flex;
 		margin: auto;
 		overflow: hidden;
 		padding: 0;
