@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/uikit-rtl.min.css">
     <link rel="stylesheet" href="css/uikit.min.css"> 
     <link rel="stylesheet" href="css/uikit.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css">
     
 </head>
 <body>
@@ -53,9 +54,17 @@
   <h2>ESTRENOS</h2>
   <section class="inicio">
     <section class="estrenos">
-      <section class="peliculasEstrenos">
-        
-      </section>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-6@m" id="estrenos">
+            
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>    
+
     </section>
   </section>
 
@@ -107,11 +116,13 @@
       </h3>
     </article>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
   <script src="js/master.js"> </script>
   <script src="js/detallepelis.js"> </script>
   <!-- <script src="js/uikit-icons.min.js"></script>
   <script src="js/uikit.min.js"></script> -->
+  
 </body>
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </html>
