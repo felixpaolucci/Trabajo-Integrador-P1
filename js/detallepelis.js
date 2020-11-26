@@ -33,7 +33,7 @@ window.addEventListener('load',function(){
     // RATING
     calificacionpeli.innerHTML = `${rating}`
     // DIRECTOR
-    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=947976bd814222f623ebca2e4e5e8a3a&language=en-US')
+    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=947976bd814222f623ebca2e4e5e8a3a&language=es-ES')
     
     // FECHA LANZAMIENTO
     .then(function(respuesta){
@@ -41,19 +41,19 @@ window.addEventListener('load',function(){
         return respuesta.json()
     })
     // GENEROS
-    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=bad307a59294abaae8c2d0fcc48475d8&language=en-US')
+    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=bad307a59294abaae8c2d0fcc48475d8&language=es-ES')
     .then(function(respuesta){
         return respuesta.jason()
     })
     .then(function(genero){
         console.log(genero);
-        detalles.innerHTML += `| ${genero.runtime}m`
+        detalles.innerHTML += `| Duración: ${genero.runtime} Minutos`
         genero.generos.forEach(genero1 => {
             genero.innerHTML += `${genero1.name} / `
         })
      
     })
-
+     
 
     // FECHA LANZAMIENTO Y MINUTOS
     .then(function(credits){
@@ -70,5 +70,17 @@ window.addEventListener('load',function(){
     .catch(function(error){
         console.log(error);
     })
-    
+
+    //TRAILER
+    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=bad307a59294abaae8c2d0fcc48475d8&language=es-ES')
+    .then(function(video){
+        console.log(video);
+        trailer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${video.results[0].key}?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `
+    })
+    .catch(function(error){
+        console.log(error);
+    })  
+
+    //PELICULAS SIMILARES
+    fetch
 })

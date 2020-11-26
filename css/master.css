@@ -191,7 +191,42 @@ h2{
 	border-radius: 10px;
 	max-height: 300px;
 }
-
+.largas{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+.largas a img{
+	border-radius: 10px;
+	max-height: 300px;
+}
+.cortas{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+.cortas a img{
+	border-radius: 10px;
+	max-height: 300px;
+}
+.miniseries{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+.miniseries a img{
+	border-radius: 10px;
+	max-height: 300px;
+}
 
 /*----- CSS - GRANDE -----*/
 @media(min-width: 1024px){
@@ -238,6 +273,21 @@ h2{
 		padding: 20px;
 	}
 	.genresPeliculas{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 20px;
+	}
+	.largas{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 20px;
+	}
+	.cortas{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 20px;
+	}
+	.miniseries{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: 20px;
