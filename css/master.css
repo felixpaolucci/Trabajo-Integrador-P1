@@ -134,7 +134,6 @@ h2{
 .peliculasTendencias a img{
 	border-radius: 10px;
 	max-height: 350px;
-
 }
 
 /*----- CSS - NO TE PODES PERDER -----*/
@@ -151,7 +150,7 @@ h2{
 	max-height: 350px;
 }
 
-/*----- CSS - SERIES -----*/
+/*----- CSS - PELICULASERIES -----*/
 .peliculaSeries{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -165,7 +164,7 @@ h2{
 	max-height: 350px;
 }
 
-/*----- CSS - Movie/SerieDtail -----*/
+/*----- CSS - detallepelis -----*/
 .informacion{
 	display: flex;
 	padding: 10px;
@@ -191,6 +190,8 @@ h2{
 	border-radius: 10px;
 	max-height: 300px;
 }
+
+/*----- CSS - SERIES -----*/
 .largas{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -254,7 +255,6 @@ h2{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: 20px;
-
 	}
 	.peliculasTendencias{
 		display: grid;
