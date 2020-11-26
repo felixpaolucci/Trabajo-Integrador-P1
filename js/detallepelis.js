@@ -12,7 +12,7 @@ window.addEventListener('load',function(){
 
     let detallePelis = location.search
     let detallePelisObj = new URLSearchParams (detallePelis)
-    let id = detallePelisObj.get('id')
+    let id = detallePelisObj.get ('id')
     let titulos = detallePelisObj.get('titulo')
     let imagen = detallePelisObj.get('imagen')
     let fecha = detallePelisObj.get('fecha')
@@ -33,13 +33,28 @@ window.addEventListener('load',function(){
     // RATING
     calificacionpeli.innerHTML = `${rating}`
     // DIRECTOR
-    fetch('https://api.themoviedb.org/3/movie/${id}?api_key=947976bd814222f623ebca2e4e5e8a3a&language=en-US')
+    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=947976bd814222f623ebca2e4e5e8a3a&language=en-US')
     
     // FECHA LANZAMIENTO
     .then(function(respuesta){
         // console.log(respuesta)
         return respuesta.json()
     })
+    // GENEROS
+    fetch('https://api.themoviedb.org/3/movie/${id}?/api_key=bad307a59294abaae8c2d0fcc48475d8&language=en-US')
+    .then(function(respuesta){
+        return respuesta.jason()
+    })
+    .then(function(genero){
+        console.log(genero);
+        detalles.innerHTML += `| ${genero.runtime}m`
+        genero.generos.forEach(genero1 => {
+            genero.innerHTML += `${genero1.name} / `
+        })
+     
+    })
+
+
     // FECHA LANZAMIENTO Y MINUTOS
     .then(function(credits){
         console.log(credits)
