@@ -119,10 +119,10 @@ h2{
 	/* LISTA GENEROS*/
 	.listaGeneros{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: 20px;
 	}
-	.imgnom{
-		display: flex;
+	.titulitos{
+		text-align: center;
 	}
 }

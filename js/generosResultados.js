@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
             document.querySelector(".listaGeneros").innerHTML += `<li><a href='movieDetail.html?idSerie=${listaGeneros.results[i].id}'><img src=" ${URLPosterlistaGeneros.results[i].poster_path}" alt=''></a></li>`;
         }*/
         aaa.results.forEach(peliculas => {
-            listaa.innerHTML += `<a href="movieDetail.html?id=${peliculas.id}"> <img src='https://image.tmdb.org/t/p/w500${peliculas.poster_path}' alt='${peliculas.title}'/> </a> <p>${peliculas.title}</p> <br>`
+            listaa.innerHTML += `<a href="movieDetail.html?id=${peliculas.id}"> <img src='https://image.tmdb.org/t/p/w500${peliculas.poster_path}' alt='${peliculas.title}'/> </a> <p class="titulitos">${peliculas.title}</p> <br>`
         });
     })
     .catch(function(error){

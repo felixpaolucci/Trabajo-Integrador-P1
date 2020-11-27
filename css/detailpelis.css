@@ -24,9 +24,6 @@ li{
 .peliculas img{
 	max-height: 250px;
 }
-h2{
-	padding-left: 15px;
-}
 /*----- CSS - Buscador -----*/
 ::placeholder{
 	color: white;
