@@ -31,11 +31,11 @@ window.addEventListener('load',function(){
         // TITULO
         titulopeli.innerHTML = `${pelicula.title}`
         // RATING
-        calificacionpeli.innerHTML = `Calificación: ${pelicula.vote_average}`
+        calificacionpeli.innerHTML = `<h3 class="infogeneral">Calificación: ${pelicula.vote_average}</h3>`
         // FECHA
-        detallespeli.innerHTML = `Fecha de estreno: ${pelicula.release_date}`
+        detallespeli.innerHTML = `<h3 class="infogeneral">Fecha de estreno: ${pelicula.release_date}</h3>`
         // RESUMEN
-        detallesov.innerHTML = `Resumen de la película: ${pelicula.overview}`
+        detallesov.innerHTML = `<h3 class="infogeneral">Resumen de la película: ${pelicula.overview}</h3>`
     })
     // ACTORES
     fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=947976bd814222f623ebca2e4e5e8a3a&language=es-ES`)
