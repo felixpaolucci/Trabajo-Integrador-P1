@@ -1,7 +1,7 @@
 window.addEventListener('load',function(){
     let detalleseries = location.search;
     let detalleseriesObj = new URLSearchParams (detalleseries);
-    let id = detalleseriesObj.get('idSerie');
+    let id = detalleseriesObj.get('pelicula.id');
 
     // INFORMACION
     fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=947976bd814222f623ebca2e4e5e8a3a&language=es-ES`)
@@ -14,7 +14,7 @@ window.addEventListener('load',function(){
         document.querySelector("div.titulo").
         innerHTML = seriePedida.name;
         // IMAGEN
-        document.querySelector("section.imagenserieimg").src = `https://image.tmdb.org/t/p/original${seriePedida.poster_path}`;
+        document.querySelector("section.imagenserieimg").src=`https://image.tmdb.org/t/p/original${seriePedida.poster_path}`;
         // FECHA ESTRENO
         document.querySelector("div.fecha").innerHTML = seriePedida.first_air_date;
         // OVERVIEW

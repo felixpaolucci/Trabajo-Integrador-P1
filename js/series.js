@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
         console.log(cualquiera);
         cualquiera.results.forEach(pelicula => {
             let articulo = document.createElement('article')
-            articulo.innerHTML += `<a href="serieDetail.html?id=${pelicula.id}"> <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.title}'/> </a> <p>${pelicula.original_name}</p> <br>`
+            articulo.innerHTML += `<a href="serieDetail.html?id=${pelicula.id}"> <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.original_name}'/> </a> <p>${pelicula.original_name}</p> <br>`
 
             largas.append(articulo)
         })
