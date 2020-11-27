@@ -25,7 +25,7 @@ window.addEventListener('load',function(){
             infogenero.innerHTML += `${genre.name} | `
         });
         // NOMBRE EN BARRA
-        title.innerHTML = `${pelicula.title}`
+        title.innerHTML = `PelisNet - ${pelicula.title}`
         // IMAGEN
         imagenPeli.innerHTML = `<img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt ='${pelicula.title}'/>`
         // TITULO
