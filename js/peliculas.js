@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
         console.log(tendencias);
         tendencias.results.forEach(pelicula => {
             let articulo = document.createElement('article')
-            articulo.innerHTML += `<a href="movieDetail.html?id=${pelicula.id}&titulo=${pelicula.title}&imagen=${pelicula.poster_path}&overview=${pelicula.overview}&calificacion=${pelicula.vote_average}&genero=${pelicula.genre_ids}&fechapubli=${pelicula.release_date}"> <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.title}'/> </a> <p>${pelicula.title}</p> <br>`
+            articulo.innerHTML += `<a href="movieDetail.html?id=${pelicula.id}"> <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' alt='${pelicula.title}'/> </a> <p>${pelicula.title}</p> <br>`
 
             peliculasTendencias.append(articulo)
         })

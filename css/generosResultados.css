@@ -6,10 +6,10 @@
 	padding: 0;
 	color: white;
 }
-article a img{
+img{
 	opacity: 1;
 }
-article a img:hover{
+img:hover{
 	opacity: 0.5;
 }
 body{
@@ -62,7 +62,11 @@ h2{
 	display: none;
 	border-radius: 20px;
 }
-
+.listaGeneros{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+}
 
 /*----- CSS - FOOTER -----*/
 .footer{
@@ -80,32 +84,10 @@ h2{
 	color: white;
 }
 
-.generosLista{
-    display: flex;
-    margin: 60px;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-.generosLista div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 350px;
-    padding: 15px;
-}
-.seriesGeneros li a{
-    text-decoration: none;
-    font-size: 20px;
-}
-.peliculasGeneros li a{
-    text-decoration: none;
-    font-size: 20px;
-}
-.seriesGeneros li a:hover{
-    text-decoration: underline;
-}
-.peliculasGeneros li a:hover{
-    text-decoration: underline;
+/* ----- CSS - RESULTADOS GENEROS ----- */ 
+.listaGeneros a img{
+	border-radius: 10px;
+	max-height: 350px;
 }
 
 /*----- CSS - GRANDE -----*/
@@ -133,5 +115,14 @@ h2{
 	.logos{
 		width: 20%;
 		padding: 40px;
-    }
+	}
+	/* LISTA GENEROS*/
+	.listaGeneros{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		padding: 20px;
+	}
+	.imgnom{
+		display: flex;
+	}
 }
